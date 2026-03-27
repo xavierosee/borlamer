@@ -1,0 +1,23 @@
+{
+  "name": "Borlamer — Suivi des Sargasses",
+  "short_name": "Borlamer",
+  "description": "Suivez les échouages de sargasses sur les plages des Antilles françaises",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0891b2",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

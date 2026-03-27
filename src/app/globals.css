@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #f8fafc;
+  --color-text: #1e293b;
+  --color-primary: #0891b2;
+  --color-danger: #dc2626;
+  --color-warning: #f59e0b;
+  --color-success: #16a34a;
+  --color-muted: #94a3b8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f172a;
+    --color-text: #e2e8f0;
+    --color-primary: #22d3ee;
+    --color-muted: #64748b;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Leaflet container must have explicit height */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
