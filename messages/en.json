@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Borlamer",
+    "subtitle": "Beach conditions in Guadeloupe"
+  },
+  "map": {
+    "loading": "Loading map...",
+    "error": "Failed to load map",
+    "locateMe": "Locate me",
+    "noData": "No recent data"
+  },
+  "status": {
+    "clean": "Clean",
+    "moderate": "Moderate",
+    "bad": "Bad",
+    "unknown": "Unknown"
+  },
+  "beach": {
+    "lastUpdated": "Last updated",
+    "source": {
+      "partner": "Reported by a partner",
+      "satellite": "Satellite data",
+      "crowdsource": "Community report",
+      "none": "No recent data"
+    }
+  },
+  "report": {
+    "title": "Report conditions",
+    "selectBeach": "Select a beach",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Additional details...",
+    "submit": "Submit report",
+    "submitting": "Submitting...",
+    "success": "Thank you! Report submitted.",
+    "error": "Error submitting report.",
+    "invalidToken": "Invalid partner link.",
+    "clean": "Clean",
+    "moderate": "Moderate",
+    "bad": "Bad"
+  },
+  "language": {
+    "fr": "FR",
+    "en": "EN"
+  }
+}

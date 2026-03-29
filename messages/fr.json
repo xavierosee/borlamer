@@ -1,0 +1,45 @@
+{
+  "app": {
+    "title": "Borlamer",
+    "subtitle": "Conditions des plages en Guadeloupe"
+  },
+  "map": {
+    "loading": "Chargement de la carte...",
+    "error": "Impossible de charger la carte",
+    "locateMe": "Me localiser",
+    "noData": "Aucune donnée récente"
+  },
+  "status": {
+    "clean": "Propre",
+    "moderate": "Modéré",
+    "bad": "Envahi",
+    "unknown": "Inconnu"
+  },
+  "beach": {
+    "lastUpdated": "Dernière mise à jour",
+    "source": {
+      "partner": "Signalé par un partenaire",
+      "satellite": "Données satellite",
+      "crowdsource": "Signalement communautaire",
+      "none": "Aucune donnée récente"
+    }
+  },
+  "report": {
+    "title": "Signaler les conditions",
+    "selectBeach": "Sélectionner une plage",
+    "notes": "Notes (optionnel)",
+    "notesPlaceholder": "Détails supplémentaires...",
+    "submit": "Envoyer le rapport",
+    "submitting": "Envoi en cours...",
+    "success": "Merci ! Votre rapport a été enregistré.",
+    "error": "Erreur lors de l'envoi du rapport.",
+    "invalidToken": "Lien de partenaire invalide.",
+    "clean": "Propre",
+    "moderate": "Modéré",
+    "bad": "Envahi"
+  },
+  "language": {
+    "fr": "FR",
+    "en": "EN"
+  }
+}

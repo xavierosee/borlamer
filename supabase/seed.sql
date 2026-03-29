@@ -1,0 +1,22 @@
+-- Seed data: real Guadeloupe beaches with accurate coordinates
+insert into beaches (name, name_fr, lat, lng) values
+  ('Grande Anse Beach', 'Plage de Grande Anse', 16.3089, -61.7878),
+  ('La Caravelle Beach', 'Plage de la Caravelle', 16.2275, -61.5260),
+  ('Saint-François Beach', 'Plage de Saint-François', 16.2510, -61.2740),
+  ('Sainte-Anne Beach', 'Plage de Sainte-Anne', 16.2270, -61.3830),
+  ('Bois Jolan Beach', 'Plage de Bois Jolan', 16.2295, -61.3490),
+  ('La Datcha Beach', 'Plage de la Datcha', 16.2215, -61.5315),
+  ('La Perle Beach', 'Plage de la Perle', 16.3200, -61.7850),
+  ('Clugny Beach', 'Plage de Clugny', 16.2920, -61.7570),
+  ('Souffleur Beach', 'Plage du Souffleur', 16.3560, -61.2980),
+  ('Pompierre Beach', 'Plage de Pompierre', 15.8620, -61.5270),
+  ('Malendure Beach', 'Plage de Malendure', 16.1670, -61.7880),
+  ('Leroux Beach', 'Plage de Leroux', 16.2400, -61.3700),
+  ('Anse du Mancenillier', 'Anse du Mancenillier', 16.1910, -61.2600),
+  ('Anse à la Gourde', 'Anse à la Gourde', 16.2430, -61.2480),
+  ('Plage de Roseau', 'Plage de Roseau', 16.1750, -61.7500),
+  ('Plage de Petit-Havre', 'Plage de Petit-Havre', 16.2180, -61.4500),
+  ('Plage de Raisins Clairs', 'Plage de Raisins Clairs', 16.2500, -61.2850),
+  ('Anse Canot', 'Anse Canot', 16.1710, -61.1530),
+  ('Anse de la Baie Mahault', 'Anse de la Baie Mahault', 15.8780, -61.5880),
+  ('Plage de Trois-Rivières', 'Plage de Trois-Rivières', 15.9740, -61.6510);
