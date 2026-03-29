@@ -1,4 +1,4 @@
-import { supabase, getServiceClient } from './supabase';
+import { getPublicClient, getServiceClient } from './supabase';
 
 export interface Beach {
   id: string;
@@ -14,7 +14,8 @@ export interface Beach {
 }
 
 export async function getBeaches(): Promise<Beach[]> {
-  const { data, error } = await supabase
+  const client = getPublicClient();
+  const { data, error } = await client
     .from('beaches')
     .select('*')
     .order('name');
