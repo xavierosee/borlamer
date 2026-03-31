@@ -4,10 +4,11 @@ import { locales, type Locale } from '@/i18n';
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
 
-export default function LocaleLayout({ children, params: { locale } }: LocaleLayoutProps) {
+export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
+  const { locale } = await params;
   if (!locales.includes(locale as Locale)) notFound();
 
   const messages = useMessages();

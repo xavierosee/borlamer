@@ -1,21 +1,13 @@
 import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
-
-const BeachMap = dynamic(() => import('@/components/BeachMap'), {
-  ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center h-full bg-gray-50">
-      <p className="text-gray-400 text-sm">Chargement...</p>
-    </div>
-  ),
-});
+import BeachMapClient from '@/components/BeachMapClient';
 
 interface PageProps {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
 
-export default function MapPage({ params: { locale } }: PageProps) {
+export default async function MapPage({ params }: PageProps) {
+  const { locale } = await params;
   const t = useTranslations();
   const otherLocale = locale === 'fr' ? 'en' : 'fr';
 
@@ -37,7 +29,7 @@ export default function MapPage({ params: { locale } }: PageProps) {
 
       {/* Map */}
       <main className="flex-1 relative">
-        <BeachMap locale={locale} />
+        <BeachMapClient locale={locale} />
       </main>
     </div>
   );

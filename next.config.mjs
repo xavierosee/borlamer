@@ -1,5 +1,5 @@
 import createNextIntlPlugin from 'next-intl/plugin';
-import withPWAInit from 'next-pwa';
+import withPWAInit from '@ducanh2912/next-pwa';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
