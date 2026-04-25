@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { use, useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import type { Beach } from '@/lib/beaches';
@@ -8,7 +8,7 @@ import type { Beach } from '@/lib/beaches';
 type Status = 'clean' | 'moderate' | 'bad';
 
 interface ReportPageProps {
-  params: { locale: string; token: string };
+  params: Promise<{ locale: string; token: string }>;
 }
 
 const statusConfig: { value: Status; emoji: string; colorClass: string }[] = [
@@ -17,7 +17,8 @@ const statusConfig: { value: Status; emoji: string; colorClass: string }[] = [
   { value: 'bad', emoji: '🔴', colorClass: 'border-red-400 bg-red-50 hover:bg-red-100 text-red-800' },
 ];
 
-export default function ReportPage({ params: { locale, token } }: ReportPageProps) {
+export default function ReportPage({ params: paramsPromise }: ReportPageProps) {
+  const { locale, token } = use(paramsPromise);
   const t = useTranslations();
   const [beaches, setBeaches] = useState<Beach[]>([]);
   const [loading, setLoading] = useState(true);
